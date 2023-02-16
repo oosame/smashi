@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  :root {
+    --color-primary-text: #fefefe;
+    --color-primary-background: #050505;
+    --color-secondary-text: #050505;
+    --color-secondary-background: #fefefe;
+  }
+} */
+
+* {
+  /* outline: 1px solid #f5f5f5; */
+}
+
+@layer utilities {
+  .layout {
+    @apply mx-4 md:mx-8 lg:mx-16 xl:mx-20;
+  }
+}
+
+@layer components {
+  .button {
+    @apply font-extrabold text-[#050505] bg-[#fefefe] border-[#050505] rounded-lg;
+  }
+}
+
+body {
+  @apply bg-[#050505] text-[#fefefe];
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
